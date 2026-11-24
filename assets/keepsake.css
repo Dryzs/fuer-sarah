@@ -1,0 +1,121 @@
+
+/* A personal keepsake: ivory paper, wine-coloured ink, and fine brass lines. */
+:root{--paper:#faf7f0;--ink:#392b30;--red:#713b4e;--muted:#847174;--line:#e1d2c7;--brass:#b69569}
+body{background:radial-gradient(ellipse at 96% 4%,#f0e0df 0,transparent 38%),linear-gradient(120deg,#fbf8f1,#f8f1e8 60%,#fbf7f1)}
+.app-shell{max-width:1390px}
+.masthead{height:94px;border-bottom-color:#d9c7bd}
+.wordmark{font-weight:400;letter-spacing:2.1px}
+.sender{letter-spacing:2.2px;font-size:9px}
+main{padding:66px 0 64px}
+.welcome-view{gap:7%;position:relative}
+.welcome-copy{position:relative;z-index:1}
+.welcome-copy h1{font-size:clamp(80px,8.2vw,122px);line-height:1.01;letter-spacing:-4px}
+.welcome-copy h1 em{position:relative;display:inline-block}
+.welcome-copy h1 em::after{content:"";position:absolute;height:9px;bottom:-11px;left:2%;right:4%;border-top:1px solid #b79379;border-radius:50%;transform:rotate(-4deg);opacity:.75}
+.welcome-copy .title-star{display:none}
+.welcome-copy .intro{font-size:14px;line-height:1.95;max-width:32em;margin-top:34px}
+.birthday-line{margin:18px 0 30px;font-size:23px}
+.primary{background:linear-gradient(135deg,#81475b,#663046);border:1px solid #623147;box-shadow:0 8px 20px #6b354518,inset 0 1px 0 #ffffff18}
+.primary:hover{background:#663046;box-shadow:0 12px 26px #6b354525}
+.button{font-size:11px;letter-spacing:.45px}
+.couple-photo{width:min(100%,420px);margin:20px auto;padding:13px 13px 27px;border:1px solid #d9c5b5;border-radius:210px 210px 4px 4px;background:#fffcf5;transform:rotate(0);box-shadow:0 26px 70px #74534118,0 2px 4px #7453410a;isolation:isolate}
+.couple-photo img{border-radius:195px 195px 1px 1px;aspect-ratio:4/5;object-position:50% 56%}
+.couple-photo::before{inset:7px;border:1px solid #c9ad8960;width:auto;height:auto;background:none;transform:none;border-radius:205px 205px 1px 1px;pointer-events:none}
+.couple-photo::after{display:block;content:"♡";top:auto;left:auto;right:-21px;bottom:48px;width:56px;height:56px;border-radius:50%;border:1px solid #a9697b;outline:4px solid #f7eee6;background:#814457;color:#f8e7d9;font:28px/1 Georgia;transform:rotate(12deg);box-shadow:0 5px 12px #60394624}
+.couple-photo figcaption{font-size:24px;padding:21px 8px 0}
+.photo-heart{display:none}
+.keepsake-sprig{position:absolute;width:110px;height:220px;bottom:3px;left:-48px;color:#ab856a;z-index:-1;opacity:.8;pointer-events:none}
+.hint-art{position:relative;border-radius:220px 220px 5px 5px;background:linear-gradient(155deg,#f0e4da80,#fffaf280);border:1px solid #e0cdbd;padding:15px}
+.nyc-art{filter:sepia(.17)}
+.love-letter{background:linear-gradient(110deg,#fffdf7,#fcf6ec);border-left:1px solid #d4b6ac;border-top:3px double #cfb6a0;padding:32px 34px}
+.love-letter .letter-heart{color:#b28c76}
+.gift-ticket{border-top:3px double #b99a7a;border-bottom:3px double #b99a7a;padding-top:5px}
+.ticket-name{font-size:72px}
+.ticket-top{letter-spacing:1.7px}
+.ticket-stub{background:#efe1d830}
+.stage-poster{aspect-ratio:4/5.7;transform:none;border:1px solid #b79a7055;background:radial-gradient(ellipse at 50% 5%,#954c5b44,transparent 60%),linear-gradient(155deg,#4f2334,#241b26);padding:70px 35px 40px;box-shadow:0 25px 65px #46223426}
+.stage-poster::before{inset:10px;width:auto;height:auto;transform:none;filter:none;background:none;border:1px solid #bc9b6b66}
+.stage-poster::after{inset:17px;width:auto;height:auto;transform:none;filter:none;background:none;border:1px solid #bc9b6b33}
+.poster-stars{top:35px;color:#c5a879;font-size:8px}
+.poster-stars span{font-size:18px}
+.poster-pretitle{font-size:8px;letter-spacing:2.7px;margin:10px 0 20px}
+.poster-mj{font-size:clamp(130px,15vw,215px);line-height:1;letter-spacing:-12px;background:linear-gradient(130deg,#f8edcf,#cda86c 55%,#f5e5be);background-clip:text;-webkit-background-clip:text;padding-right:10px}
+.poster-musical{font-size:11px;letter-spacing:6px;margin-top:15px}
+.poster-rule{width:100px;background:linear-gradient(90deg,transparent,#b49464,transparent);margin:28px auto 23px}
+.poster-city{font-size:29px}.poster-city em{font-size:45px}
+.poster-bottom{font-size:7px;letter-spacing:1.4px;margin-top:32px}
+.poster-corner{display:none}
+.memory-page{max-width:1150px}
+.memory-header{border-bottom:1px solid #dac6ba;height:100px}
+.memory-header>span{letter-spacing:2.5px;font-size:9px}
+.memory-heading{padding:72px 0 68px;position:relative}
+.memory-heading::before{content:"";position:absolute;top:22px;bottom:20px;left:50%;width:min(72%,620px);transform:translateX(-50%);border:1px solid #dfcbb952;border-radius:50%;z-index:-1}
+.memory-heading h2{font-size:clamp(54px,7vw,86px);line-height:1.05;letter-spacing:-2.7px}
+.memory-heading>p:not(.eyebrow){font-size:13px;line-height:1.8}
+.memory-heading>span:last-child{font-size:24px;margin-top:22px;color:#a98470}
+.chapter-label{gap:18px;margin:40px 0;letter-spacing:2.2px;font-size:8px}
+.chapter-label>span{display:grid;place-items:center;width:43px;height:43px;border:1px solid #d6bcaa;border-radius:50%;font:italic 20px var(--serif);flex-shrink:0}
+.chapter-label::after{background:linear-gradient(90deg,#d8bfae,transparent)}
+.memory-card{padding:12px 12px 28px;box-shadow:0 12px 32px #72543c12;border-color:#e5d7ca;border-radius:2px}
+.memory-card::before{width:74px;height:23px;left:calc(50% - 37px);top:-11px;background:#cfb99a60;border-left:1px dashed #c2a98660;border-right:1px dashed #c2a98660}
+.memory-card:nth-child(3){width:90%;margin:0 auto}
+.memory-card figcaption{font-size:23px;padding:21px 9px 0;color:#785261}
+.memory-clips h3{font-size:42px;letter-spacing:-1px}
+.clip-grid figure{padding:11px 11px 23px;background:#fdf9f2;box-shadow:0 15px 35px #68453310;border-color:#e4d1c4}
+.clip-grid figcaption{font-size:20px;padding-top:18px}
+.angelo-memory{position:relative;border-radius:170px 170px 4px 4px;background:radial-gradient(ellipse at 50% 0%,#fff8ed,#f0e2d9 80%);border-color:#dac3b2;padding-top:52px}
+.angelo-intro h3{font-size:clamp(38px,5vw,62px)}
+.angelo-paw{font-size:27px;color:#a87969}
+.angelo-photo,.angelo-video{border-color:#deccbe}
+.angelo-note{font-size:32px}
+.child-memory{border-top:0;padding-top:24px}
+.child-memory figure{padding:13px 13px 22px;background:#fffcf6;border:1px solid #dfcfbf;box-shadow:0 14px 38px #72543c13;transform:rotate(-1deg)}
+.child-memory figure img{display:block;width:100%}
+.child-memory figcaption{font-size:19px;padding:17px 4px 0}
+.child-letter h3{font-size:37px;line-height:1.16;color:var(--red);letter-spacing:-.6px}
+.child-letter p{font-size:20px;line-height:1.75}
+.last-letter-section{border-radius:150px 150px 4px 4px;background:radial-gradient(ellipse at 50% 0,#fdf4e9,#eee0d8);box-shadow:inset 0 0 0 8px #fffaf238;border:1px solid #d8beab}
+.envelope-decoration{box-shadow:0 16px 32px #7e574426}
+.next-memory{gap:60px;padding-top:95px}
+.future-photo{background:radial-gradient(ellipse,#f1e3d9,#f8f0e5);border-color:#c6ad97}
+.future-polaroid{border:1px solid #e2d2c3;box-shadow:0 15px 40px #72543c14}
+.memory-ending{font-size:30px;line-height:1.5;padding-top:45px;color:var(--red)}
+.memory-bottom-back{display:flex;margin:0 auto}
+@media(max-width:700px){
+ .app-shell{padding:0 24px}.masthead{height:76px}.sender{font-size:7px;letter-spacing:1px}
+ main{padding:36px 0 38px}.welcome-copy>h1{font-size:76px;letter-spacing:-2.8px;margin-top:24px}
+ .welcome-copy .intro{font-size:13px;line-height:1.85;max-width:29em;margin-top:28px}
+ .birthday-line{font-size:21px}
+ .couple-photo{width:min(83%,295px);padding:10px 10px 22px;margin:30px auto 28px}
+ .couple-photo img{aspect-ratio:4/4.5}.couple-photo figcaption{font-size:20px;padding-top:17px}
+ .couple-photo::after{width:43px;height:43px;right:-15px;bottom:35px;font-size:23px;outline-width:3px}
+ .keepsake-sprig{width:80px;height:160px;left:-31px;bottom:15px}
+ .welcome-copy>.button{max-width:350px}
+ .hint-art{padding:8px;margin:35px auto 0;max-width:310px}
+ .love-letter{padding:27px 23px;text-align:left}
+ .reveal-copy h2{font-size:43px}
+ .stage-poster{max-width:310px;padding:65px 26px 32px;margin:15px auto 25px}
+ .poster-mj{font-size:170px}.poster-musical{font-size:10px;letter-spacing:4px}
+ .poster-pretitle{font-size:7px;letter-spacing:2px}.poster-city{font-size:26px}.poster-city em{font-size:39px}
+ .poster-bottom{font-size:6px;margin-top:27px}.ticket-name{font-size:63px}
+ .memory-page{padding:0 22px 55px}.memory-header{height:85px;gap:10px}
+ .memory-header>span{font-size:7px;letter-spacing:1px}.memory-header .button{font-size:9px;padding:10px 12px}
+ .memory-heading{padding:53px 0 45px}.memory-heading::before{width:95%;top:20px;bottom:12px}
+ .memory-heading h2{font-size:clamp(44px,11vw,58px);letter-spacing:-1.7px}
+ .memory-heading>p:not(.eyebrow){font-size:12px;max-width:250px}
+ .chapter-label{font-size:7px;letter-spacing:1.3px;gap:11px;margin:30px 0}
+ .chapter-label>span{width:34px;height:34px;font-size:17px}
+ .memory-grid{gap:42px;padding:7px 4px 40px}.memory-card:nth-child(3){width:100%}
+ .memory-card{padding:10px 10px 23px}.memory-card figcaption{font-size:21px;padding:18px 6px 0}
+ .memory-clips h3{font-size:33px}.clip-grid figcaption{font-size:19px}
+ .angelo-memory{border-radius:95px 95px 4px 4px;padding:40px 16px 35px}
+ .angelo-intro h3{font-size:39px}.angelo-note{font-size:28px}
+ .child-memory{gap:30px}.child-letter h3{font-size:32px}.child-letter p{font-size:19px}
+ .last-letter-section{border-radius:100px 100px 4px 4px;padding-top:45px}
+ .next-memory{padding-top:65px;gap:35px}.memory-ending{font-size:25px}
+}
+@media(max-width:360px){
+ .app-shell{padding:0 20px}.welcome-copy>h1{font-size:67px}
+ .memory-page{padding-left:17px;padding-right:17px}.angelo-intro h3{font-size:34px}
+ .memory-header>span{max-width:90px}.chapter-label{letter-spacing:.8px}
+}
