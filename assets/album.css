@@ -43,3 +43,25 @@ dialog.flight-transition{position:fixed;inset:0;margin:0;padding:0;border:0;widt
 @keyframes flight-words{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:600px){.flight-message{top:23%}.flight-journey{top:61%}.flight-cloud{width:100vw;height:50vw}.cloud-one{left:-40vw;top:73%}.cloud-two{right:-38vw;top:7%}.cloud-three{top:80%;right:-30vw}.flight-message small{margin-top:22px}}
 @media(prefers-reduced-motion:reduce){.flight-message,.flight-cloud,.flight-journey{animation:none}.flight-transition::after{transition:none}}
+
+/* Spacious initials with fine rules instead of overlapping rings. */
+.memory-heading > .album-monogram{
+  display:flex!important;align-items:center;justify-content:center;
+  width:fit-content;max-width:100%;height:auto;min-height:58px;
+  margin:0 auto 27px!important;padding:6px 0;gap:12px;
+  border:0;border-radius:0;outline:0;
+  font:normal 34px/1.2 var(--serif);letter-spacing:0;white-space:nowrap;
+}
+.memory-heading > .album-monogram::before,
+.memory-heading > .album-monogram::after{
+  content:"";display:block;flex:0 0 32px;height:1px;
+  background:linear-gradient(90deg,transparent,#c5a49c);
+}
+.memory-heading > .album-monogram::after{transform:rotate(180deg)}
+.memory-heading > .album-monogram i{font:italic 25px/1.2 var(--serif);color:#aa7785}
+@media(max-width:700px){
+  .memory-heading > .album-monogram{font-size:30px;gap:10px;min-height:50px;margin-bottom:25px!important}
+  .memory-heading > .album-monogram::before,
+  .memory-heading > .album-monogram::after{flex-basis:24px}
+  .memory-heading > .album-monogram i{font-size:22px}
+}
