@@ -65,3 +65,74 @@ dialog.flight-transition{position:fixed;inset:0;margin:0;padding:0;border:0;widt
   .memory-heading > .album-monogram::after{flex-basis:24px}
   .memory-heading > .album-monogram i{font-size:22px}
 }
+
+/* A quieter, warmer album with generous spacing. */
+:root{--paper:#faf6ef;--ink:#3e3035;--red:#82465b;--muted:#806e71;--line:#e5d6ce}
+body{background:radial-gradient(ellipse at 100% 0,#f0dfe4 0,transparent 42%),radial-gradient(ellipse at 0 65%,#f2e9dd 0,transparent 45%),var(--paper)}
+.paper-grain{opacity:.055}
+.masthead{border-color:#dec9c180}
+.button{border-radius:999px;padding:17px 27px;letter-spacing:.4px}
+.primary{background:#82465b;box-shadow:0 8px 24px #68374918}
+.secondary{background:#fffaf5;border:1px solid #d3b8bc}
+.welcome-copy .intro{color:var(--muted);line-height:1.95}
+.couple-photo{border:1px solid #e6d8cf;box-shadow:0 24px 65px #61453618;transform:rotate(1.2deg);padding:15px 15px 25px}
+.couple-photo::after{display:none}
+.love-letter{border:1px solid #e4d4c9;border-left:2px solid #bc8f9d;border-radius:3px;padding:30px 32px;box-shadow:0 12px 35px #744b4010}
+.love-letter p{line-height:1.85}
+.gift-ticket{border-color:#d4b8b1;box-shadow:0 16px 42px #70445012;background:linear-gradient(135deg,#fffdf8,#fbf2e7)}
+.ticket-stub{border-color:#d5b7ad}
+.stage-poster{transform:rotate(1deg);box-shadow:0 24px 60px #4e26322b;background:radial-gradient(ellipse at 50% 15%,#783548,#341c29 55%,#241d24);border:1px solid #b9967355}
+.curtain-left,.curtain-right{background:linear-gradient(180deg,#12050b66,transparent 24%,#19071140),repeating-linear-gradient(90deg,#3e1526 0%,#6a2b42 6%,#91465b 10%,#582035 16%,#421528 20%);box-shadow:inset -12px 0 35px #16071160}
+.curtain-right{box-shadow:inset 12px 0 35px #16071160}
+.memory-page{max-width:1140px;padding-bottom:80px}
+.memory-heading{padding:70px 0 65px}
+.memory-heading h2{line-height:1.04;margin:23px 0}
+.memory-grid{gap:72px 65px;padding-bottom:80px}
+.memory-card{border:1px solid #e9ded5;padding:14px 14px 26px;box-shadow:0 12px 30px #65452f12}
+.memory-card::before{opacity:.7}
+.memory-card:nth-child(2n){transform:rotate(1deg)}
+.memory-card:nth-child(3){transform:rotate(-.7deg)}
+.memory-card:nth-child(4){transform:rotate(.7deg)}
+.memory-card:nth-child(5){transform:rotate(-1deg)}
+.memory-card figcaption{font-size:23px;line-height:1.35;padding-top:20px}
+.memory-open{border-radius:2px;overflow:hidden}
+.clip-grid figure{border:1px solid #e9ded5;box-shadow:0 12px 30px #65452f12}
+.chapter-label{margin:42px 0 32px;letter-spacing:2px}
+.child-letter p{max-width:33em}
+.last-letter-section{background:radial-gradient(ellipse at top,#f4e8e4,#eee0dc);border-color:#e7d5cf}
+.angelo-memory{margin:0 0 85px;padding:48px 42px 50px;background:linear-gradient(145deg,#f3e6e0,#f8f0e7);border:1px solid #e6d6cc;border-radius:140px 140px 8px 8px}
+.angelo-intro{text-align:center;max-width:550px;margin:0 auto 42px}
+.angelo-paw{display:block;font:32px Georgia;color:#a66d7f;margin-bottom:15px}
+.angelo-intro .eyebrow{justify-content:center;font-size:8px;letter-spacing:2.5px}
+.angelo-intro h3{font:normal clamp(36px,5vw,58px)/1.08 var(--serif);letter-spacing:-1.6px;margin:20px 0}
+.angelo-intro h3 em{color:var(--red)}
+.angelo-intro>p:last-child{font-size:13px;line-height:1.9;color:var(--muted)}
+.angelo-grid{display:grid;grid-template-columns:1.1fr .85fr;gap:45px;align-items:center}
+.angelo-photo,.angelo-video{margin:0;background:#fffcf7;padding:12px 12px 22px;box-shadow:0 15px 35px #744b4017;border:1px solid #e8d9cf}
+.angelo-photo{transform:rotate(-1.2deg)}
+.angelo-photo img{width:100%;height:auto;max-height:none;display:block}
+.angelo-photo figcaption,.angelo-video figcaption{font:italic 21px/1.4 var(--serif);color:var(--red);text-align:center;padding:18px 5px 0}
+.photo-date{display:block;text-align:center;font-size:7px;letter-spacing:2px;color:#947b75;margin-top:12px}
+.angelo-video-wrap{min-width:0}
+.angelo-note{text-align:center;font:30px/1.25 var(--serif);color:var(--red);margin:0 0 26px}
+.angelo-video{transform:rotate(1deg)}
+.angelo-video video{display:block;width:100%;height:auto;aspect-ratio:512/910;background:#322a2b;object-fit:contain}
+.angelo-video figcaption{font-size:18px}
+@media(max-width:700px){
+  .button{padding:15px 21px}
+  .memory-header{gap:12px}.memory-header .button{padding:10px 14px}
+  .memory-heading{padding:45px 0 38px}
+  .memory-heading h2{font-size:clamp(43px,11vw,57px)}
+  .memory-grid{gap:38px;padding-bottom:42px}
+  .memory-card{padding:10px 10px 22px}
+  .memory-card figcaption{font-size:21px}
+  .love-letter{padding:24px 23px}
+  .chapter-label{font-size:7px;letter-spacing:1.1px;gap:9px;margin:32px 0 25px}
+  .angelo-memory{padding:38px 17px 32px;border-radius:90px 90px 6px 6px;margin-bottom:50px}
+  .angelo-intro{margin-bottom:30px}.angelo-intro h3{font-size:38px;letter-spacing:-1px}
+  .angelo-intro>p:last-child{font-size:12px}
+  .angelo-grid{grid-template-columns:1fr;gap:35px}
+  .angelo-photo{transform:rotate(-.7deg)}.angelo-video{transform:rotate(.7deg);max-width:300px;margin:auto}
+  .angelo-photo figcaption{font-size:20px}.angelo-note{font-size:27px;margin-bottom:20px}
+  .angelo-video video{max-height:65svh}
+}
